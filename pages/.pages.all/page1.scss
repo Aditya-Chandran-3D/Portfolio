@@ -1,0 +1,449 @@
+/*tags*/
+/*
+.title
+.caption
+.ytvideo
+.pageVideo
+.pageVideoVertical
+.pageVideoSquare
+.pageImagesgroup
+.pageImages
+*/
+
+
+/* press watch sass */
+/* For scrollbar */
+::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(77, 77, 77);
+    margin-block: .5em;
+    border-radius: 100vw;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 100vw;
+    border: 0.15em solid  #121212;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(158, 158, 158);
+}
+
+.open-nav {
+    transform: translateX(0%);
+}
+
+
+/* For content ---- For content ---- For content ---- For content ---- For content */
+body {
+    margin: 1.5em;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #080808;
+    overflow-x: hidden; // hide horizontal
+    cursor: auto;
+}
+
+a { 
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.logo {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.menu {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+}
+
+nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    width: 50%;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+    z-index: 99;
+
+
+ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10em;
+
+a {
+            color: rgb(0, 0, 0);
+            padding: .75em 2em;
+            display: block;
+            width: 100;
+            border-radius: 30px;
+            margin: 1em;
+
+            &:hover {
+                background: rgb(22, 22, 22);
+                color: #ffffff;
+            }
+        }
+    }
+
+.close {
+        float: right;
+        margin: 0.5em;
+        width: 2em;
+    }
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+
+
+    svg {
+        width: 2em;
+        margin-top: -.6em;
+
+        
+        rect{
+            fill: rgb(255, 255, 255);
+        }    
+    }
+}
+
+
+
+
+
+
+/*--title--------title--------title--------title--------title--------title--------*/
+
+.title {
+    padding-top: 70px;
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.caption {
+    padding-top: 70px;
+    padding-bottom: 10px;
+    font-size: 0.7em;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+/*--youtube--------youtube--------youtube--------youtube--------youtube--------youtube--*/
+
+.ytvideo {
+    align-content: center;
+    aspect-ratio: 16/9;
+    width: auto;
+}
+
+/* For width more then 920 */
+@media only screen and (min-width: 920px) {
+    .ytvideo {
+        scale: 90%;
+    }
+}
+
+
+/*--video-------video-------video-------video-------video-------video-------video-----*/
+
+.pageVideo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.pageVideoVertical {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.pageVideoSquare {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+@media only screen and (min-width: 920px) {
+    .pageVideo {
+        scale: 90%;
+    }
+    .pageVideoVertical {
+        max-width: 50%;
+    }
+    .pageVideoSquare {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    .pageVideoVertical {
+        max-width: 30%;
+    }
+    .pageVideoSquare {
+        max-width: 50%;
+    }
+}
+
+
+
+
+
+
+
+/*--page_images--------page_images--------page_images--------page_images--------page_images--*/
+
+
+.pageImagesgroup {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.pageImages {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* For width more then 920 */
+@media only screen and (min-width: 920px) {
+    .pageImagesgroup {
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    }
+}
+
+
+
+
+
+
+/*--page content end--------page content end--------page content end--------page content end--------page content end--*/
+
+
+/*footer*/
+
+.socials {
+    margin-top: 100px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    opacity: 1;
+}
+
+
+
+.footer {
+
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .icon {
+    position: relative;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .icon img {
+    height: 40px;
+    width: 40px;
+    padding: 12px;
+    display: block;
+    background: rgb(19, 19, 19);
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+
+.footer .icon .icons {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.footer .icon .tooltips {
+    position: absolute;
+    top: 0px;
+    font-size: 15px;
+    color: #ffffff;
+    background: white;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    padding: 10px 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footer .icon:hover .tooltips {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.footer .icon .tooltips::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: white;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+
+/*--contact icons--*/
+
+.footer .instagram:hover .icons,
+.footer .instagram:hover .tooltips,
+.footer .instagram:hover .tooltips:before {
+    background: rgb(194, 61, 212);
+}
+
+.footer .youtube:hover .icons,
+.footer .youtube:hover .tooltips,
+.footer .youtube:hover .tooltips:before {
+    background: rgb(236, 43, 43);
+}
+
+.footer .artstation:hover .icons,
+.footer .artstation:hover .tooltips,
+.footer .artstation:hover .tooltips:before {
+    background: rgb(35, 151, 228);
+}
+
+/* rights */
+.rights {
+    font-size: 8px;
+    color: rgb(61, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    border-top-style: solid;
+    border-width: 2px;
+    border-color: rgb(46, 46, 46);
+}
+
+
+
+
+
+/* For width more then 680 */
+@media only screen and (min-width: 680px) {
+
+    body {
+        margin: 1.5em 3em;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .rights {
+        font-size: 12px;
+    }
+}
+
+/* For width more then 920 */
+@media only screen and (min-width: 920px) {
+
+    body {
+        margin: 1.5em 5em;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    nav {
+        transform: translateX(0);
+        position: fixed;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+        z-index: 99;
+
+        svg.close {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+
+            margin-top: 0.5em;
+            padding: 0.2em;
+            background: rgba(31, 31, 31, 0.452);
+            border-radius: 3em 0 0 3em;
+
+            a {
+                color: white;
+                padding: 0.7em 3em;
+                font-size: .6em;
+                margin: 0;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/* For width more then 1220 */
+@media only screen and (min-width: 1220px) {
+
+    body {
+        margin: 1.5em 10em;
+    }
+}
