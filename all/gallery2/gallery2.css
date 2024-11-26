@@ -31,7 +31,7 @@
 .button-group .button{
   display: inline-block;
   padding: 10px 20px;
-  margin: 3px;
+  margin: px;
   background-color: #ffffff;
   border: 20px solid #ffffff;
   color: var(--primary-clr);
@@ -39,8 +39,8 @@
   
   text-transform: uppercase;
   transition: all 0.4s;
-  border: none;
-  border-radius: 5px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
   outline: none;
   cursor: pointer;
 }

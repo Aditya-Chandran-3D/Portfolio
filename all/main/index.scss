@@ -283,8 +283,15 @@ section.about {
 @media only screen and (min-width: 1520px) {
     section.about {
         padding: 1em 12em;
+        padding-bottom: 30px;
+    }
+
+    h2.aboutme {
+        margin: 10px;
     }
 }
+
+
 
 
 /*footer*/
